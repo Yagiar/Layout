@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/Literature.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/popup.css" rel="stylesheet" type="text/css"/>
+    <script src="./js/Literature.js"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/node.js"></script>
+    <title>Literature</title>
+</head>
+<body>
+    <script>
+        setInterval(slideChange,3000,'slider1','right')
+    </script>
+<main class="main">
+<div class="header-wrap">
+        <header class="header">
+            <div class="Logo">           
+                <div class="divImage" style="background-image:url(./resources/Logo.jpg);">
+                </div>
+                <div class="divText" onclick="show_popup('.order_popup');">
+                    Приветствую вас на моем макете!
+                    </div>
+            </div>
+            <div class="Name">
+                <p>Макет Дмитрия Терешкина</p>
+            </div>
+        </header>
+</div>
+<span class="menuButton" onclick="MenuToggle();">Меню</span>
+<nav class="navigation">
+    <div class="puncts"><a href="./index.html">Главная</a></div>
+    <div class="puncts"><a href="./Search.html">Поиск</a></div>
+    <div class="puncts"><a href="./ObrSv.html">Обратная связь</a></div>
+    <div class="puncts"><a href="./ListLiterature.html">Список литературы</a></div>
+    <div class="puncts"><a href="./Contacts.html">Контакты</a></div>
+</nav>
+<div class="middle">
+<div class="tables">
+<div class="Razdel">
+    <table class="table">
+        <!-- предусмотреть горизонтальный скрол только для таблицы 
+        предусмотреть стили по умочанию то есть просто div {....}
+        -->
+        <tr>
+            <td colspan="3">1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+
+            <td>7</td>
+
+            <td>7</td>
+
+            <td>7</td>
+
+
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+
+        </tr>
+        
+    </table>
+</div>
+<div class="Razde2">
+    <table class="table">
+        <tr >
+            <td rowspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+    </table>
+</div>
+</div>
+<div class="sliders">
+<div class="slider" id="slider1">
+    <div class="slider_slide slider_slide_inactive" style="background-image:url(./resources/1.jpg)"></div>
+    <div class="slider_slide slider_slide_inactive" style="background-image:url(./resources/2.jpg)"></div>
+    <div class="slider_slide slider_slide_inactive" style="background-image:url(./resources/3.jpg)"></div>
+    <div class="slider_slide slider_slide_active" style="background-image:url(./resources/4.jpg)"></div>
+    <span class="slider_button slider_button_left" onclick="setTimeout(slideChange,800,'slider1','left')">&lt;</span>
+    <span class="slider_button slider_button_right" onclick="setTimeout(slideChange,800,'slider1','right')">&gt;</span>
+</div>
+</div>
+</main>
+<div class="footer-wrap">
+    <span class="under_popup"></span>
+<footer class="footer">
+<a href="./index.html">&copy; 2022-My-First. All rights reseverd.</a>
+<div class="order_popup">
+    <div class="popup_content">
+         <div class="MyImage" style="background-image:url(./resources/Logo.jpg)"></div>
+    </div>
+    <span class="close_popup" onclick="close_popup('.order_popup');">X</span>
+</div>
+</footer>
+</div>
+</body>
+</html>
