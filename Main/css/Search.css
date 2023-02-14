@@ -1,0 +1,254 @@
+*{margin:0; padding:0;}
+
+html, body{width:100%; height:100%;background:#eee}
+
+.main {width:100%;min-height:100%;position:relative;z-index:10;}
+.main:before{left:0;}
+.main:after{right:0;}
+.footer-wrap{margin-top:-40px;position:relative;z-index:20;}
+.header-wrap,.middle{z-index:2;position:relative;}
+.header{
+    width: 100%;
+    height:50px; 
+    font-size: 0;
+    }
+.footer{height:40px;}
+.footer a
+{
+font-size:16px;
+color:#eee;
+font-style: italic;
+text-align:center;
+font-weight:bold;
+display:block;
+position:relative;
+top:25%;
+}
+
+.header,.footer{background-color:#333}
+.Logo
+{
+    width:25%;
+    height: 50px;
+    position:relative;
+	display: inline-block;
+}
+.Name
+{
+	display: inline-block;
+	width: 75%;
+	font-size: 25px;
+	position: relative;
+	text-align: center;
+	color:red;
+	top:-40%;
+}
+.divImage
+{
+	position:absolute;
+	display:block;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.divText
+{
+	display:none;
+	width:250px;
+	position:absolute;
+	top:0px;
+	left:-25px;
+	background-color:pink;
+	border:1px solid red;
+	font-size:14px;
+	text-align:center;
+	line-height:1.5;
+	z-index:3;
+	border-radius:5px;
+}
+.Logo:hover .divText{display:block;}
+.Logo:after
+{
+	position:absolute;
+	display:block;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#00A;
+	content:'';
+	opacity:0.5;
+	z-index:1;
+}
+.Logo:hover:after{display:none;}
+.menuButton
+{
+	width: 100%;
+	height: 20px;
+	display: none;
+	text-align: center;
+    position: relative;
+    cursor: pointer;
+	color:aqua;
+	background-color: rgb(55, 49, 60);
+}
+.navigation
+{
+    font-size: 0;
+    width:100%;
+    height: 50px;
+    position: relative;
+}
+.puncts{
+display:inline-block;
+width:20%;
+height: 50px;
+background-color: rgb(55, 49, 60);
+margin:0;
+padding: 0;
+}
+.puncts a{
+    font-size:14px;
+    text-decoration:none;
+    text-align: center;
+    width:100%;
+    height: 100%;
+    color:aqua;
+    display: block;
+    box-sizing:border-box;
+    padding:15px;
+}
+.puncts a:hover
+{
+    background: rgb(40, 36, 43);
+    color:#eee;
+}
+
+.Search-block
+{
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+.Search {background: #A3D0C3;
+display: inline-block;
+width: 33.3333333%;}
+.Search input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+.Search button {
+  position: relative;
+  left:50%;
+  width: 60px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.Search button:before {
+  position: relative;
+  content: "Search";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+.middle::after
+{
+	display:block;
+	content:'';
+	height: 40px;
+}
+@media screen and (min-width:300px) and (max-width:733px){
+    .menuButton
+	{
+		display: inline-block;
+		padding-top: 0.5%;
+	}
+    .puncts{
+		display:block;
+		width:100%;
+		height: 25px;
+		background-color: rgb(55, 49, 60);
+		margin:0;
+		padding: 0;
+		}
+	.navigation{
+		height: 125px;
+		display: none;
+	}
+    .divText
+	{
+		width: 125px;
+		font-size:10px;
+		left:50%;	
+	}
+	 .Name{
+		font-size:10px;
+	} 
+	.MyImageBlock
+{
+
+	width:100px;
+	height:100px;
+
+}
+   .puncts{
+       display:block;
+       width:100%;
+       height: 25px;
+       background-color: rgb(55, 49, 60);
+       margin:0;
+       padding: 0;
+       }
+   .navigation{
+       height: 125px;
+   }
+       .puncts a{
+           font-size:10px;
+           text-decoration:none;
+           text-align: center;
+           width:100%;
+           height: 100%;
+           color:aqua;
+           display: block;
+           box-sizing:border-box;
+           padding:5px;
+       }
+    .Search
+    {
+        display: block;
+        width: 100%;
+    }
+    .Search input
+    {
+        font-size: 8px;
+        height: 21px;
+        border: 1px solid #7BA7AB;
+        border-radius: 3px;
+    }
+    .Search button
+    {
+        width: 33px;
+        height: 21px;
+        border-radius: 3px;
+    }
+    .Search button:before {
+        font-size: 8px;
+        text-align: center;
+        bottom: 10%;
+      }
+}
